@@ -47,6 +47,6 @@ jobs:
       - name: Build and push image
         uses: docker/build-push-action@v2
         with:
-          context: ./Chapter 15
+          context: ./Chapter15
           push: true
           tags: ${{ env.ACRNAME }}.azurecr.io/website:${{ github.run_number }}
